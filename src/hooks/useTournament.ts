@@ -7,8 +7,9 @@ export function useTournament() {
   const loadTournaments = useTournamentStore((state) => state.loadTournaments);
   const createTournament = useTournamentStore((state) => state.createTournament);
   const registerTeam = useTournamentStore((state) => state.registerTeam);
+  const unregisterTeam = useTournamentStore((state) => state.unregisterTeam);
   useEffect(() => {
     if (tournaments.length === 0) void loadTournaments();
   }, [loadTournaments, tournaments.length]);
-  return { tournaments, loading, loadTournaments, createTournament, registerTeam };
+  return { tournaments, loading, loadTournaments, createTournament, registerTeam, unregisterTeam };
 }

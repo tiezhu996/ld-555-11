@@ -78,6 +78,16 @@ p { color: var(--muted); line-height: 1.7; }
 .empty-state { padding: 24px; text-align: center; }
 .toast { position: fixed; right: 18px; bottom: 18px; z-index: 30; background: var(--accent); color: var(--bg); border-radius: 8px; padding: 13px 16px; font-weight: 900; box-shadow: var(--shadow); }
 .toast--error { background: var(--danger); color: white; }
+.badge { display: inline-flex; align-items: center; padding: 5px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; border: 1px solid transparent; }
+.badge--success { background: color-mix(in srgb, #51d88a 18%, var(--surface)); color: #51d88a; border-color: color-mix(in srgb, #51d88a 45%, var(--line)); }
+.badge--warning { background: color-mix(in srgb, #f6c177 18%, var(--surface)); color: #f6c177; border-color: color-mix(in srgb, #f6c177 45%, var(--line)); }
+.waitlist-card { position: relative; }
+.waitlist-card .badge--warning { position: absolute; top: 10px; right: 10px; z-index: 2; }
+.detail-meta { margin: 0; color: var(--muted); font-size: 14px; }
+.hero-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.button--ghost { background: transparent; border-color: var(--line); color: var(--muted); }
+.button--ghost:hover { color: var(--text); border-color: var(--danger); color: var(--danger); }
+.section-head span { color: var(--muted); font-size: 14px; font-weight: 700; }
 @media (max-width: 760px) {
   .site-header { align-items: flex-start; flex-wrap: wrap; }
   nav { order: 3; width: 100%; }

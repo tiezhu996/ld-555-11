@@ -31,6 +31,7 @@ export function CreateTournament() {
       status: TournamentStatus.REGISTRATION,
       rules,
       teams: [],
+      waitlist: [],
       bracket: { rounds: [{ name: '待确认', matches: [] }] },
     };
     await createTournament(tournament);

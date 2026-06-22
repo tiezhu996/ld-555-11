@@ -24,6 +24,7 @@ export interface Tournament {
   status: TournamentStatus;
   rules: string;
   teams: string[];
+  waitlist: string[];
   bracket: {
     rounds: BracketRound[];
   };
